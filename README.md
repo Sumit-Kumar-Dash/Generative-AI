@@ -1,2 +1,2 @@
-# LLM_Langchain
-Langchain Tutorials with Usecases
+# LLM_Tutorials
+Gen AI (LLMs) Tutorials with Usecases
