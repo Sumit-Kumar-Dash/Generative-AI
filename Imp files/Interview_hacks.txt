@@ -1,0 +1,461 @@
+what is the position, job profile and skills required for it
+
+i am expecting minimum 150% hike and let me tell the reasons for that
+ you are looking for a data scientist who can build a good model in machine learning -
+but let me explain what skills and experience i can bring upto the table
+i can fulfill your current requirement of data scientist as a machine learning engineer for building a good model . But along with that i have much experience on cloud  focusingly on aws where i can deploy the model , build multiple cloud based product and if required somepart of cloud admin knowledge also i had . Additionaly i had worked upon Natural Language Processing which deals with text type model . Also i have experience of python backend where i had already built different product application or websites with the help of frontend people . Along with that i had knowledge on MLOps , its like counter part of DevOps in Data science world which includes CI,CD and CT pipeline with containerization .
+
+So basically i can provide experience and knolwedge 4-5 people. So in looking into that i am expecting less and if u also see with the industry standard and the experience of 5 years , its not look high.
+
+======================================================================================================
+what i lack , where can i improve myself
+i want expose mlops , llmops , LLM - by july or august i will try to build
+underpaid - 10 ctc with 5 years - min 100% hike
+DC
+25% ; 5% = 50K
+
+ml
+nlp
+aws
+dev - api
+======================================================================================================
+
+before saying my expectation let me say little more about you 
+multi skill set - data scientist (time series +anomaly +NLP +Gen AI) + AWS extensive and basic Azure + Application Dev + MLOps 
+so for this kind of skill set and more than 5 year of exp , i need min 25 LPA
+
+which area will work in nlp/time series. i have less experienced in cv . whats company outlook in gen ai and mlops ? are they implementing or trying to do ?
+
+will get to involve in architecture/system design/application devpt
+
+how cloud interactive is
+
+any in house product creating ?
+
+
+https://www.eventbrite.com/e/nlp-summit-2023-tickets-628686768047
+
+APIs in production - flask(nginix,gunicorn,uvicorn) // fast api
+week 5 mlops 
+docker - kubernetes
+parallel jobs - multiprocessing.cpu_count()
+stable diffusion
+llmops
+prompt engg
+deeplearning.ai - short courses
+llama-index
+
+nlp all type of tasks and possible solution :-
+	sentence similarity
+	summarization
+	text classification
+	document classification
+	translation (NMT)
+	sentiment
+	ner (pos tagging)
+	paraphrasing
+	OCR
+	zero shot classification
+	topic modelling
+	image captioning
+	Text Generation(Completion)
+
+
+nlp important topics :-
+	min edit distance
+	markov chain and model
+		hidden markov model
+		viterbi algo
+	N-grams
+		SOS , EOS
+		Perplexity Matrices - Lang Model Evaluation
+		OOV words
+		smoothing
+	Embeddings
+		integer
+		one hot encoding
+		word embeddings
+			CBOW
+			TF-IDF
+			skip grams
+			word2vec
+			glove
+			fastText
+		Deep learning
+			bert 
+			elmo
+			gpt-2
+			text-embedding-ada-002
+	Tokenization
+	Trax
+	RNN (Sequence Models)
+		Bi-RNN
+		Deep RNN
+		exploding and vanishing gardient in RNN
+	GRU
+	LSTM
+	siamese networks
+	Attention models
+		seq2seq (NMT => Encoder-Decoder arch with LSTM/GRUs)
+		Attention Layer
+		Q,K,V
+		attention(scaled dot product attention)
+		allignment weight matrix
+		teacher forcing
+		curriculam learning
+		Transformer Model
+			positional encoding
+			multi head attention
+			Transformer arch
+			Encoder-Decoder 				-> encoder -decoder attention
+			Only Encoders( Auto encoders)	-> self -attention
+			Only Decoders( Auto regressive) -> masked self attention
+	Transfer Learning
+	LSH (Locality Sensitive Hashing)
+	Reverse Residual Layer
+	Reformer: reversible transfomer	
+	Models
+		ELMo (LSTm/GRU)
+		BERT (Only Encoders)
+		GPT  (Only Decoders)
+		T5	 (Encoder-Decoder)
+		
+	Evaluation matrix 
+		BLEU
+		ROUGE
+		F1
+		RANDOM SAMPLING & GREEDY DECODING
+		BEAM SEARCH
+		MIN BAYES RISK
+	Benchmark
+		GLUE
+		
+why llm always choose only decoder(autoregressive) models
+diff between lstm and gru 
+justfy lstm full form
+what is self in self attention model
+why attention is famous
+what is ground truth
+use of skip n/w in Tx
+sentence transfomer
+
+
+LLM
+	Prompt
+	Completion
+	Context Window
+	Inference
+Prompt Engg
+	In context learning
+	Zero Shot/One Shot/Few Shot Inference
+Inference Parameter
+	temperature, k, p, max_new_token
+Gen AI Lifecycle
+Pre-training LLM
+	Distributed Computation
+		DDP
+		FSDP
+	Domain Specific pre training LLM
+LLM Evaluation
+	
+INSTRUCTION FINE TUNING (dataset -> prompt+completion)
+	Fine Tuning on 
+		Single Task
+		Multi Task
+	FFT - Full Fine Tuning
+	PEFT - Parameter Efficiency Fine Tuning
+		selective - 
+		reparametrization - 
+			LoRA
+				QLoRA
+		additive - 
+			soft prompts ( Prompt Tuning)
+			adapters
+FINE TUNING ON HUMAN FEEDBACK -> RLHF			
+	obtaining feedback from humans
+	reward model
+	fine tuning with reinforcemnet
+	Algorithm -> 
+		Proximal Policy Optimization(PPO)
+		Q-Learning
+		Direct Preference OPtimization
+	Reward Hacking
+	Evaluate human aligned LLM
+	Scaling human feedback
+	
+Model Optimization for Deployment
+	Distillation
+	Quantization
+	Pruning
+LLM Application Integration
+	RAG
+		Retreiver
+		Vector Database
+		Index
+	Chain of Thoughts
+	PAL
+	ReAct
+	LLM Framework
+			
+LLM Tools -> 
+	Framework -> langchain, llama-index(LlamaHub,LlamaLab), embedchain, model-hub, haystack, HuggingFace
+				 langsmith (debugging, testing, evaluating, and monitoring LLM applications)
+	Finetuning Lib -> PyTorch, HuggingFace, Llama Lib(Lamini), W&B, Gradio
+	Other Lib -> Openai, cohere, stablediffusion, weviate, DeepLaks, Replicate(llama2), Pinecone, Chroma, Qdrant, Zillis
+	Platform -> Sagemaker, Azure ML, Vertex AI
+	
+LLM Evaluation Methods ->
+	monitor Feedback
+	
+	Bleu , ROUGE
+	ragas (python lib) - {'ragas_score': 0.860, 'context_relevancy': 0.817, 'faithfulness': 0.892, 'answer_relevancy': 0.874}
+	from llama_index.evaluation import ResponseEvaluator (Return answer in Yes/No) 
+		ResponseEvaluator
+			.evaluate (evaluate response)
+			.evaluate_source_nodes (evaluate source node)
+		QueryResponseEvaluator
+			.evaluate(query, response) (if response matches the query + any source context.)
+			.evaluate_source_nodes(query, response) (if each source node contains an answer to the query.
+		Question Generation
+
+	W&B
+		storing results like tokens usage, question, answer, context in table
+	langchain
+		QA
+		embedding_distance (cosine,hamming,euclidian,manhatten,CHEBYSHEV)
+		StringDistance
+		agents
+	manual evaluation
+	embedding similarity on test Q/A
+
+LLM Monitoring
+	Monitoring
+		When developing your LLM application, it can be helpful to keep track of production data such as:
+			Pipeline performance (latency/token count/throughput of various stages)
+			Resource usage (LLM/Embedding Inference Cost, CPU/GPU utilization)
+			Evaluation metrics (accuracy, precision, recall, qualitative eval and drift)
+			Pipeline versioning (which versions of sub-components e.g. LLM/embedding & artifacts e.g. prompts were used in the pipeline at a given time)
+
+RLHF - 
+	SFTTrainer
+	Reward Model (Language Model)
+		TRL
+		TRLX
+	RLHF Algo -
+		PPO(Proximal Policy Optimization)
+		Q Learning
+		Direct Preference Optimization
+	
+Multimodal LLM
+		IDEFICS
+		KOSMOS-1
+		GPT-4
+		
+		
+		
+Langchain
+	Vector DB vs Indexes
+	Adding multiple docs to one vector DB
+	Merging two Vector DB
+	Memory
+	reading csv&json
+	converting pdf into json format
+	creating q/a from pdf for finetuning
+	Agent (csv/df/json)
+		openai functions
+		toolkits
+	Vector DB - cognitive (semanic search + kernel sdk)
+				faiss
+	LLM - OpenAI (3/3.5)
+		  
+	Retreiver - 
+	Finetuning - 
+Llamaindex
+Embedchain
+===========================================================================================================	
+	time complexity
+	how to find d and why we need d, what is p,d,q (SARIMA -> explain S, AR, I,  MA)
+	how to calculate stride
+	when to apply regularization
+	differenece between lstm and gru
+	why we used lstm in all place rather than gru
+	what is attention , what is the use of it and how it can improve and specially for large problem
+	mse vs mape , and where we will use it
+	what is activation function and where to use which activation function in CNN
+	tokenization vs lemmatization
+	stationary vs trend vs seasonality vs cycle
+	bagging vs boosting
+	rf vs xgb vs gb
+	what is cross entropy
+	extraction vs selection and their methods
+	missing values - what to do if u had 50% missing values and u can't drop column
+	exploding gardient vs vanishing gradient
+	relu vs leaky relu and where to use what
+	where to use which activation function -> based on use case and layer of NN
+	(which activation function in object detection , which in objet classifcaTation)
+	variation in statistics
+	what is alpha,beta,gamma in exponential smoothing
+	gmm for univariate and multivariate
+	evaluation metrics for time series
+	acf vs pacf
+	seasonal variation vs cyclical variation
+	residuals in time series
+	additive vs multiplicative ( seasonal decompose)
+	
+	what is white and red noise
+	trend stationary 
+	what is stationary and trend and how to check 
+	how to make time series as stationary
+	linear and non linear model
+	
+	generator ,iterator and decorator
+	oops concept - Abstraction, Polymorphism, Inheritance, and Encapsulation
+	
+	how to monitor model in real time data using AWS Sagemaker
+	
+	TF 1 vs 2
+	when to use Hot storage vs cold storage in 	S3 or Blob
+	differenece between lakehouse vs S3 or Blob
+	IOT - what type of device used , whats the througput(or rate) of data and whats the size of data received and in which format
+	Power BI -> map vs data source
+	different types of analytics -> descriptive vs predictive vs prescriptive
+	what we need to consider while calucalting cost in S3
+	
+	null hypothesis in linear regression
+	how to deal with imbalance classification problem
+	what matrix is imp in cancer detection problem
+	what is p-value in simplest term
+
+ehr data with patient data
+chargpt
+recommendation system
+commercial 
+============================================================================================================	
+image in pdf -> 
+	extract image from pdf, run ocr(form recogniser/textract/easy ocr/pytesseract) , else run multimodal , else do image captioning 
+table in pdf ->
+	ocr(form recogniser/textract) to extract table from scanned pdf
+	tabula-py
+	camelot-py[cv]
+llm evaluation during training and serving (ci/cd/ct)
+finetuning
+top-p ,top_k,max_tokens
+avoid hallucination/bad results - proper prompt engg, fine tuning, proper vector stores,
+how to handle varying context length
+current LLM max context length
+how to split json data , csv or excel data
+diff between json vs jsonl
+human feedback -> importance and what to do with this ?
+
+embedding - max token length 
+how to embed big document
+how to store embeddings
+
+drift - model,feature,data
+LLM evaluation
+faiss vs vectordb
+list index vs knowledge graph vs vector index
+index store vs vecor db store
+
+opt, bloom, falcon - fine tuning
+gen ai on cv - images
+
+giraff,llama-1 gen-1
+
+connecting on vpn
+quantization - optimization
+researching
+keyword search
+=========================================================================================
+can we add new nodes in ec2 ? 
+scaling ec2 based on storage(hard disk), scaling instance(ram,rom)
+concept drift vs data drift vs model drift 
+	how to handle all those
+how to track model in real time
+how to retrain the model
+when to retrain the model
+
+data(feature) drift/model drift/concept drift -> 
+
+	Data drift refers to a meaningful change in distribution between the training data and production data. Changes in input data distribution will affect model performance over time, although it’s a slower process than in the case of data quality issues.
+	
+	Feature drift can occur due to data quality issues or general changes in the real world, like changes in the preferences of business customers. An example of feature/attribute drift is where a historical set of attributes are used as a baseline and newer attributes are compared so that changes in the distribution of the attributes can be detected
+		Basic statistical metrics
+		Continuous features -> divergence and distance tests such as Kullback–Leibler divergence, Kolmogorov-Smirnov statistics (widely used), Population Stability Index (PSI), Hellinger distance, and so on.
+		For categorical features -> chi-squared test, entropy, the cardinality or frequency of the feature.
+		
+	Model Drift -> relationship between features and/or labels no longer holds because the learned relationship/patterns have changed over time.
+
+huggingface hub
+cerebrium ai
+sagemaker
+azure ml
+llama hub
+banana
+
+
+
+textblob
+=================================================
+Bizmetric-
+	deployed certifications
+	microsoft certified
+	databricks certified
+
+	edge computing
+	kafka
+
+	time series
+	nlp
+	on prem tools - deployment
+	mlops
+
+	azure
+	domain certifications
+	mlops
+
+	pnb , canara, exxonmobile
+
+	data analytics company
+	oracle -> cloud 
+
+	microsoft partner
+	50+ clients
+	iswar
+	sunil mangtani
+===========================================================================
+Deloitte
+	200 teams
+	gen- ai - last 2 years
+	no specific project
+	experiment tracking
+	deploying
+	data ingestion
+	
+	why and how
+	why failing
+	
+	customer churning
+	improve manu
+
+	what is token and why do we need tokens ( why cant we use having instead of have+ing)
+		-> we need tokens beacuse it casn handle 	-> c
+	handle variable context length ->
+										masking/padding inputs
+	which embedding model is better and why
+	why do we need vector db -> own search algo and better indexing and querying. whats other benefits of it
+		why cant we store them in csv or excel ->
+	what are three assumptions in linear regression and why do we need those assumptions?
+	
+	what is difference betweeen r2 and adjusted r2 - why and how r2 will increase adding more independent variables 
+		(r2 inc means error dec which is good then why do we need adjusted r2) 
+	how do we calculate feature importance in linear regression
+	what is p values and how to calculate
+	why cant we use z test for n<30
+	why cant we use t test for n>30
+
+	apart from fine tuning and prompt engg
+		how to handle questions like "who won wimbledon" -> no vector db in retriever so no nothing to gpt-3.5 
+		how to handle hallucination -> 
+		how to evaluate llm
+		

@@ -1,0 +1,58 @@
+Devops
+	Docker, Kubernets, Git, Github Actions, Jenkins
+	ECS,EKS,ECR,CodeCommit,CodePipeline
+
+
+
+MLOPs Tool
+
+	MLFlow, Airflow,  DVC(Distributed Version Control)
+	Kubeflow, Sagmekaer Studio
+	Experiment Tracking Tools - 
+		Neptune
+		Weights & Biases
+		Comet
+		Sacred & Omniboard
+		MLflow
+		TensorBoard
+		Valohai
+	Artifactory
+		JFrog's Artifactory 
+		Sagemaker Model Registry
+	
+	
+LLMops Tool
+	Weights&Biases
+	Weviate
+	Langsmith
+	LMFlow
+
+
+	
+Experiment Tracking and Model Metadata Management Tools
+	MLFlow
+	Databricks MLflow
+	Weights&Biases
+	Comet ML
+Orchestration 
+	Prefect
+	Metaflow
+	TFX
+	Kedro
+Data and Pipeline Versioning Tools
+	DVC
+	Pyacyderm
+Model Deployment and Serving Tools
+	TFX
+	BentoML
+	Cortex
+Model Monitoring in Production MLOps Tools
+	Evidently
+	Fiddler
+	Censius AI
+End to End
+	AWS Sagemaker
+	Azure Machine Learning
+	Google Cloud ML Engine
+	Kubeflow
+	Dagshub

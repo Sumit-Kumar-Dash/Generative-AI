@@ -1,0 +1,57 @@
+pose estimation - gait / lstm
+pose estimation - 	top down approach(first detect person and then detect keypoints in each person) & 
+					bottom up approach(first detect all the key points available on the frame and then club the key points to detect the person)
+deep pose - 2014 - cnn - 	predcit regression points on different body joints - each body joint will predict 2 points(x,y) - total 18 body joints = total 36 points on final layer of cnn
+							cascade regression = once one point detected then we will take the crop of that point and will apply cnn again 
+open pose - bottom up approach multi person post accolsion  - identifying which key point belong to which human
+	parts - body points like neck , left shoulder , right shoulder = total 18 parts
+			each body parts have (x,y) coordinates
+	pairs - couple of parts - combination /connection between two parts 
+	
+open pose architecture - 
+	i/p image size= 224*224*3
+	first will apply vgg19 to the image to do feature extraction and pass these output features (final output dimension = 224*224*57)into next layer 
+	next layer of network will split the network into two parts - 
+				1. Part confidence maps => one branch of network will predict the 18 confidence maps . Each confidence map will give you which particular body part we are trying to estimate .
+					It will give the output in a heatmap format to show where the body part is in the person
+					
+					no max suppression => as we will get multiple candidate for one body part so NMS filter out correct candidate which will give the correct estimation
+					Vgg19 -> heatmap -> no max suppression -> 
+					
+				2. part affinity fields => second branch will give predict 38 different output which represemt the degree of association (which those two body parts can be combined to give you a pair)   
+				
+				Bipartite graph matching => will do post processing to find out which parts/pairs we can combine to create a human skeleton
+				3. last output tensor will give you the background  
+
+
+
+https://www.tensorflow.org/hub/tutorials/movenet
+https://tfhub.dev/google/movenet/multipose/lightning/1
+https://google.github.io/mediapipe/solutions/pose.html
+https://github.com/WongKinYiu/yolov7/tree/pose
+https://github.com/RizwanMunawar/yolov7-pose-estimation
+https://github.com/augmentedstartups/pose-estimation-yolov7
+https://stackabuse.com/pose-estimation-and-keypoint-detection-with-yolov7-in-python/
+https://stackabuse.com/real-time-pose-estimation-from-video-in-python-with-yolov7/
+https://github.com/manirajanvn/yolov7_keypoints/blob/main/yolov7_pose_estimationvideo.py
+
+https://learnopencv.com/yolov7-pose-vs-mediapipe-in-human-pose-estimation/#:~:text=Unlike%20conventional%20Pose%20Estimation%20algorithms%2C%20YOLOv7%20pose%20is,extension%20of%20the%20one-shot%20pose%20detector%20%E2%80%93%20YOLO-Pose.							
+
+
+https://google.github.io/mediapipe/
+https://github.com/WongKinYiu/yolov7
+https://github.com/WongKinYiu/yolov7/releases
+https://arxiv.org/abs/2207.02696
+https://arxiv.org/abs/2204.06806
+https://github.com/ultralytics/yolov5
+https://learnopencv.com/yolov7-object-detection-paper-explanation-and-inference/
+
+
+https://medium.com/geekculture/useful-dataset-for-human-pose-estimation-b905d8f08ed4
+https://www.analyticsvidhya.com/blog/2021/10/human-pose-estimation-using-machine-learning-in-python/
+https://www.youtube.com/watch?v=bcPJeK7TrfY
+https://www.analyticsvidhya.com/blog/2022/04/comprehensive-guide-for-pose-estimation/
+https://viso.ai/deep-learning/pose-estimation-ultimate-overview/
+https://medium.com/@siddrrsh/a-short-guide-to-pose-estimation-in-computer-vision-3ea708dd9155
+https://medium.com/beyondminds/an-overview-of-human-pose-estimation-with-deep-learning-d49eb656739b
+https://medium.com/augmented-startups/top-9-pose-estimation-models-of-2022-70d00b11db43
