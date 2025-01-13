@@ -115,7 +115,7 @@ nlp important topics :-
 	Reverse Residual Layer
 	Reformer: reversible transfomer	
 	Models
-		ELMo (LSTm/GRU)
+		ELMo (LSTM/GRU)
 		BERT (Only Encoders)
 		GPT  (Only Decoders)
 		T5	 (Encoder-Decoder)
@@ -148,6 +148,8 @@ LLM
 Prompt Engg
 	In context learning
 	Zero Shot/One Shot/Few Shot Inference
+	Chain of Thoughts
+	ReAcT
 Inference Parameter
 	temperature, k, p, max_new_token
 Gen AI Lifecycle
@@ -395,67 +397,160 @@ banana
 
 
 
-textblob
-=================================================
-Bizmetric-
-	deployed certifications
-	microsoft certified
-	databricks certified
+what is token and why do we need tokens ( why cant we use having instead of have+ing)
+	-> we need tokens beacuse it casn handle 	-> c
+handle variable context length ->
+									masking/padding inputs
+which embedding model is better and why
+why do we need vector db -> own search algo and better indexing and querying. whats other benefits of it
+	why cant we store them in csv or excel ->
+what are three assumptions in linear regression and why do we need those assumptions?
 
-	edge computing
-	kafka
+what is difference betweeen r2 and adjusted r2 - why and how r2 will increase adding more independent variables 
+	(r2 inc means error dec which is good then why do we need adjusted r2) 
+how do we calculate feature importance in linear regression
+what is p values and how to calculate
+why cant we use z test for n<30
+why cant we use t test for n>30
 
-	time series
-	nlp
-	on prem tools - deployment
-	mlops
-
-	azure
-	domain certifications
-	mlops
-
-	pnb , canara, exxonmobile
-
-	data analytics company
-	oracle -> cloud 
-
-	microsoft partner
-	50+ clients
-	iswar
-	sunil mangtani
-===========================================================================
-Deloitte
-	200 teams
-	gen- ai - last 2 years
-	no specific project
-	experiment tracking
-	deploying
-	data ingestion
+apart from fine tuning and prompt engg
+	how to handle questions like "who won wimbledon" -> no vector db in retriever so no nothing to gpt-3.5 
+	how to handle hallucination -> 
+	how to evaluate llm
 	
-	why and how
-	why failing
-	
-	customer churning
-	improve manu
+==================================================================================================================
+zip
+pickling
+generating patterns
+different uses of PCA apart from dimensionality reduction
+use cases of lista nd tuple and its diff
+posin encoding -> which method used
+why do we need above
+why do we need feed fwd nn and what is its o/p
+what is the o/p of attention layer
+why do we need normalization
+what is the use of encoder and decoder
 
-	what is token and why do we need tokens ( why cant we use having instead of have+ing)
-		-> we need tokens beacuse it casn handle 	-> c
-	handle variable context length ->
-										masking/padding inputs
-	which embedding model is better and why
-	why do we need vector db -> own search algo and better indexing and querying. whats other benefits of it
-		why cant we store them in csv or excel ->
-	what are three assumptions in linear regression and why do we need those assumptions?
-	
-	what is difference betweeen r2 and adjusted r2 - why and how r2 will increase adding more independent variables 
-		(r2 inc means error dec which is good then why do we need adjusted r2) 
-	how do we calculate feature importance in linear regression
-	what is p values and how to calculate
-	why cant we use z test for n<30
-	why cant we use t test for n>30
+self join union vs union all
 
-	apart from fine tuning and prompt engg
-		how to handle questions like "who won wimbledon" -> no vector db in retriever so no nothing to gpt-3.5 
-		how to handle hallucination -> 
-		how to evaluate llm
-		
+====================================================================================================================
+weekly customer interaction and explaining approach
+data transfer - hdd to s3 through direct upload
+domain understanding
+Data Size , Number of files
+no. of columns , data frequency , no of tails , params , phases , location , size , no. of files 
+EDA - Metadata , Flight Data
+Data Preprocessing
+Anomaly Detection - GMM , DBSCAN , Isolation Forest - 3SD , 4SD , 5SD
+Time Series - Prophet , expo-holter-wint(uni) , kalman (multi)
+power bi - visualization - explain 
+
+
+form recognizer
+entity extraction
+document inteligence
+ML Studio - data drifting 
+Azure ML Developers
+OCR - LLMs
+NLP + NLU + NLG
+
+azure kubernetes
+deploment and devpt of application in azure
+manage resources
+optimization and scalability
+===============================================================================
+neural network with one hidden layer
+text 
+kernel funtion in svm
+keyword normalization techniques in nlp
+no. of bigrams in one line
+how posn encoding happpen
+
+data drift / model drift / concept drift
+=============================================================================
+web2vec
+how whisper model how work ,  how to counter wrong transcript w.r.t timing
+what is manifest file in docker
+what is web2vec and how whisper use it
+tokenization vs embedding
+embedding mode architecture
+why do we need tokens instead of word or sentence
+
+=============================================================================
+
+difference between dict and json
+nested json
+list and dict comprehension
+kv = list(map(itemgetter(1), f))
+fvrt_values = [dictionary['fvrt'] for item in data for dictionary in item]
+zip - https://stackoverflow.com/questions/42417816/how-can-i-merge-two-dictionaries-with-multiple-key-value-pairs
+Using ** operator
+enumerate
+
+====================================================================
+
+how to track api consumption
+purchase subscripton and consumption tracker -> subscripton based / prepaid / postpaid
+transfering application from one env to anathor , auto scaling , prod-dev env
+code quality sonarqube
+===============================================================================
+difference between text generation model and chat completion model
+MOE vs LLM vs Multimodal LLM vs Vision LLM vs SLM
+RLHF vs RLAIF vs DPO vs PPO vs 
+
+how to minimize vanishing gradient
+why random initialization is needed
+why we can't use all layers sigmoid activation function
+why we dont use linear activation (what will happen to output with 3 hidden layers and 5 hidden layers)
+diifference between rouge and bleu conceptually
+
+why do we need feature store
+how to replace the sagemaker endpoints with new models
+evaluation in OCR output
+how feature importance get calculated in random forest
+how map is better than rmse in time series
+in imbalance classification how to use measure accuracy and how to modify your loss function
+
+single layer vs multi layer peceptron
+prob of single random number in normal distributed data
+kurtwiness vs skewness
+agentic vs semantic chunking
+python collections
+python random number
+
+table processing vs image processing vs 
+multimodal model architecture
+format of image for pre-processing (base 64) and whats output of base 64 and why its needed
+how json input is processed in vector db
+evaluation and tracking metrics
+different similarity metrics
+
+langraph
+decorator uses
+pydantic
+how to keep your api secured in exchange of data
+
+how to measure model drifting when minor version changed in hosted LLMs without changing major api-version
+===============================================================================================================
+kubenrtes -> cluster -> nodes -> pods = hosting docker containers inside pods
+load balancing vs auto scaling
+
+min pod = 1 
+max pod = 20
+1 pod = 1 docker image
+1 node =  max 5 pods
+1 cluster = max 10 nodes
+
+is cluster physically exist ? Cluster does not have fix memory, it upscale itself and downgrade itself based upon number of node getting created or deleted.
+Does node use memory available in cluster or node has its own memory ?
+Node should exist phyiscally
+
+AKS => in built load balancer feature 
+EKS same as AKS but ECS simsilar to EKS but aws own cluster
+
+in ECS we need to create load balancer seprately
+
+ci vs cd 
+task -> pod
+does jenkins got created automatically -> via terraform or need to create manually ?
+

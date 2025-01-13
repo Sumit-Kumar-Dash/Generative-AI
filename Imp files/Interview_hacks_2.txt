@@ -1,0 +1,641 @@
+IQVIA - Document Redact with GxP Compliance
+Blender Automation 2D to 3D
+Co-pilot Advisor =>  User personalization + image Gen AI
+Honeywell MVP + Allegro JIRA integrations + image Gen AI
+Honeywell PMO + CyChart
+Philips Online Exam
+
+
+CyText 2.0 -> S&P, SSCN + cyarc
+OCD
+JAL
+HR Attrition
+ABB Spare parts Demand Forecasting
+AI/ML OS Platform
+Rio-Tinto NLP
+ITAR Doc Classification
+======================================================================================
+Natural Language Processing with Transformers, Revised Edition
+Practical Natural Language Processing
+Natural Language Processing with PyTorch
+
+https://github.com/bentrevett
+https://github.com/keon/awesome-nlp
+https://github.com/jasonwei20/eda_nlp
+https://github.com/EthicalML/awesome-production-machine-learning
+distill.pub/2019/memorization-in-rnns
+joshvarty.github.io/VisualizingRNNs/
+======================================================================================
+BASE64 - ENCODE, DECODE
+WSGI , GUNICORN , NGNIX , APACHE - SERVER
+CORS
+FLASK - 
+env variables
+automation of accelerators - .env
+postman
+sftp (csv,excel), databse, datawarehouse, data lakes, webscraping, streaming data, live/stored cameras(image and videos), text(scanned pdf or images)
+
+train - RGB
+test - monochrome -> convert this into RGB using Pillow or OpenCV
+expand_dims = expanding test image matrix into training image format
+	let total training image = 45k , size of each image = 64*64 and RGB . Then matrix shape = [45000,24,24,3]
+	let total validation image = 10k , size of each image = 64*64 and RGB. Then matrix shape = [10000,24,24,3]
+	now for test/prediction we provide the image is 64*64 of RGB. so matrix shape = [64,64,3]
+																				after expand_dims = [1,64,64,3] 
+ground truth data - 
+sagemaker ground truth 		
+Public data source - UCI Repo, Google BigQuery,	Kaggle, AWS Open Data Registry		
+
+CNN RNN GNN
+
+https://stackoverflow.com/questions/44280815/merge-multiple-list-of-dict-with-same-value-in-common-key
+https://favtutor.com/blogs/merge-dictionaries-python#:~:text=We%20can%20combine%20two%20dictionaries,value%20of%20the%20second%20dictionary.
+
+per POC cost - $30K/2 month
+per head cost - $35/hr
+acquired new customer
+multiple deal with existing customer
+===================================================================================================================================
+
+Multimodal ->
+	multimodal RAG,LLM and Embedding 
+	multilingual LLM and Embedding
+	VLM vs Multimodal LLM vs Multimodal Embeddings vs Image Generator(Diffusion) vs LLM vs SLM vs Text Embedding => Architecture
+	image captioning
+	which vector store support storing multimodal embedding ? => vector db storing multi modal embedding
+	multi vector retriever
+	CLIP architecture
+MAMBA - jamba model
+MoE -> Mixture of Experts (Sparse)
+SLM -> Small Language Models
+advanced rag -  reranking,vertex ai,text-bison(palm),bedrock, different vector stores,embedding and LLM model
+				table and image in RAG  -> cytext,json, langchain with form recogniser, 
+				lost in middle of long context
+				dynamic chunking -> 
+				dynamic prompting eg: instruction in copilot 
+				multi turn conversation(user personalized) response
+				Opensource LLMs + RAG
+Graph RAG
+Agentic RAG
+GNN RAG
+Responsible AI
+Enterprise RAG
+Agentic approach
+	Types of agent -> 
+		LLM Reflection
+		Multi agent
+		Planning 
+		Tool Use
+		Reflection
+		Coding
+	Langchain Agent
+	Llama-Index Agent
+	Autogen - microsoft
+	Crew.ai
+	LangGraph Agent
+	Bedrock
+	Azure Open AI - function calling
+					assistant api
+
+fine tuning llm & embedding -> 
+		opensource , azure , aws
+		SFT -> FFT vs PEFT
+		PEFT -> Selective vs Reparametrization(LoRA) vs Additive (Adapters  vs Soft Prompt/Prompt Tuning)
+GAN	
+Model Optimization -> Quantization, Pruning, Distillation
+evaluation of LLM ->
+	langchain evaluation, perplexity metrics , check in finetune course, ragas, langsmith, Azure Prompt Flow, Bedrock Evaluation,
+	deepeval
+Knowledge Graphs -> LangGraph
+					bedrock knowledge database
+
+LLMOps -> rag with w&b,mlflow
+human preferences -> 
+	RLHF // DOP // RLAIF // ORPO // PPO // PGO-> 
+
+production grade => CI/CD pipeline
+
+Vision Transformers
+LCEL - Lang chain expression language
+Chain of Thoughts vs ReAct framework vs Few/zero shot prompting vs In-context learning
+instruct fine tuned learning vs text generation model vs chat based model 
+single agent vs multi agent vs multimodal agent
+Guardrails
+Framework ->Langchain -> LCEL,LangGraph,LangSmith,LangServe, langchain-packages
+			Auto-GPT
+			AgentGPT
+			Llama-Index
+			
+promptflow -> github/azure devops
+
+morphology, syntax, semantics, and pragmatics. word ambiguity. NER,PII. kendra - vector DB
+
+
+type of NLP, multimodal and CV task -> check hugging face
+	NLP -> 
+		Tokenization, part-of-speech tagging, named entity recognition/PII, and sentiment analysis.
+		text/language generation
+		machine translation,
+		text/data classification, text-summarization (Extractive& Abstarctive), Q/A & chatbot
+		data deduplication,
+		table Q/A,
+		sentence similarity, 
+		fill mask,
+		topic modelling -> abstract themes within a text corpus
+			
+			eg : Spam detection,Grammatical error correction, Autocomplete
+	CV ->
+	
+	Audio ->
+
+pinecone,kendra,weviate,deeplake,faiss, azure ai search, chroma, faiss, milvus, qdrant, Vespa,ClickHouse
+opensearch,redis,postgresql(pgvector),cassandra,elasticsearch,MongoDB
+
+tflite,pytorch,tf
+
+__init__() vs __init__.py
+__init__() vs __call__()
+onnx
+llama.cpp vs ollama
+docker vs container
+ngininx vs gunicorn vs uvicorn
+
+https://www.deeplearning.ai/resources/natural-language-processing/
+===================================================================================================================================
+plm
+jira
+microsoft tools
+mpp excels
+sap - data source
+lesson learned , web emails
+capacity planning
+o/p based on lesson learned
+storing data in data lake in certain format (ms 365/Teams/Sharepoint)
+Teams call excel -> autom email generation -> folow update 
+
+	wrong answer
+	wrong link
+	references
+	excel wrong answer
+	
+	regenerate pdf link
+	regenerate => reshuffle chunks
+	different prompt adding existing answer in promot
+	
+	prompt for detecting product 
+	semantic ranking 
+	doc mis match
+	follow up memory
+	mapping of bulletin number/publication no/ATA
+	multithreading
+	
+gpt-4-turbo-vision with multimodal
+gpt-3.5-turbo fine tuning
+ada embedding fine tuning
+dalle-3
+Table -> 
+difference between turbo and gpt-3 (gpt-3 vs gpt-3.5) => gpt-3 is instruction fine tuned of gpt 3
+gemini + dialogflow
+
+nltk
+spacy
+gensim
+textblob
+corenlp
+allennlp
+transformers
+pandasai
+w&b
+jax
+diffusers
+acme
+openai azure
+bedrock
+vertexai
+
+huggingface=>
+	accelerate ->
+	peft -> implement lora
+	bitsandbytes -> quantization (convert 32 bits wieghts into 4 bits)
+	transformers -> 
+	trl -> transformer reinforcemnet learning
+	
+https://realpython.com/python-unittest/
+=============================================================================================================================
+LLM//SLM//MoE//MAMBA//
+Text LLM
+Multimodal LLM
+opensource LLM
+Diffusion models
+Text Vectors
+Multimnodal vectors
+Text Embedding
+Multimodal Embedding
+
+Basic RAG
+Advanced RAG
+Graph RAG
+RAG with knowledge graph
+Enterprise RAG
+Advance Retreival
+RAG Evaluation
+LLM Frameworks - Langchain , llama-index
+Finetuning LLM - SFT(Instruction based) vs PEFT (RLHF based)  vs pre trained(training from scratch)
+Quantization
+Deploying RAG
+Prompt engg - Zero/few shots, chain of thoughts, in context
+Azure openai // aws Bedrock // gcp vertexai
+ml studio//sagemaker//gcp 
+
+Langchain agents vs LangGraph agents
+Agentic Framework - LangGraph, Crew.ai, Autogen
+Functions
+
+LLMOps
+Testing in LLMOps
+Conversational Chat with/without History
+Asking for human I/Ps
+Unstructured - preprocessing unstructured data especially images//tables from pdf 
+rag on csv/excel of high no. of rows
+
+Responsible AI
+Red Teaming
+RLHF( DPO + PPO)
+RLAIF
+ReAct , Function calling , Assistant API => are different form of prompt engg only
+
+datra lake vs database(sql vs nosql) vs datawarehouse
+OLAP				OLTP						OLAP
+columnar			row	wise					columnar(one column as one block)
+
+Labeled vs Unlabled data
+supervised(regression & classification) vs unsupervised(clustering and dimensionality reduction) vs self supervised vs reinforcement
+structured vs unstructured
+
+computer vision, natural language processing (NLP), intelligent document processing (IDP), and fraud detection. 
+
+uvicorn 
+===============================================================================================================================
+TRL lib -> SFT and RLHF -> https://github.com/huggingface/trl
+PEFT lib -> PEFT
+transformer 
+accelerate
+Lit GPT -> PEFT
+
+fb - opt1.3b
+meta - llama 2&3
+databricks - dbrx
+mistral - 
+snowflake
+openai -> openclip
+
+
+traineremail
+blobconatiner -> sourcecontainer
+trainer name and email
+
+
+what typeof usecase it solved
+how it will help customer to solve their problems
+what is current cutsomer problem -> eg: money,time,manual work
+======================================================================================================
+type of analytics -> descriptive , diagnostics, predictive , prescriptive
+
+Spark includes libraries like Spark SQL for structured data, MLlib for machine learning, GraphX for graph processing, and Spark Streaming for real-time data streams.	Spark Core
+
+
+
+for the given input and classify it into one of the below following  categories                
+{1: " Regulatory Complaince " ,               
+2 : "test script generation ",             
+3 :" Complaint Management"              
+4 : "Predictive Maintainence " }               
+
+Output should be in this format: {1 : "Regulatory Complaince" }              
+input : {"What was the result of the root cause analysis of complaint " }
+=======================================================================================================
+sanghi 
+hidden castle
+bidar temple
+yadagiriguta
+swarnagiri
+dakhin badrinath
+kali vivek
+himamad gopalswamy
+sri rangapatna
+
+question -> intent etction -> agent hit -> middle layer or RAG pipeline with extaernal database -> intent for detecting api's of cyarc/cyfast...(own database) or not -> convert question to api format -> get answer -> reurn to user
+
+
+mrng - soaked almond//banana//chia or flax seeds (sometime basil) , two eggs, Peanut butter whole wheat bread
+lunch - soyabean//paneer//green peas//dal
+afternoon - peas//guava//sprout
+dinner - whole wheat//rajma//chole//skim milk//soya milk
+
+chicken breast
+tuna fish
+turkey breast
+salmon  fish
+lentils
+greek yogurt
+paneer//cottage cheese
+eggs
+tofu
+
+labanya_jena 	1-7-1968	902		Number:587551803
+
+=================================================================================================================================
+blob vs ADLS vs Data warehouse
+folder flat vs hieracrchical folder
+OLTP(record level) vs OLAP(batch level)
+non-distributed vs distributed
+
+difference between docker container and docker image
+whats the ideal value of r2
+how to validate the models output in monitoring stage
+difference between fit() and fit_transform and Standard scaler() and normalization+standardizzation
+anomaly vs outlier
+evaluation - context relevancy need ground truth ?
+mitigating hallucination
+how to fill col of 30% null value
+what evaluation metrics to use for regression data having outliers
+
+what will happen to precision and recall if we inc value of threshold in sigmoid function
+what are the different activation function, different optimizers, different loss function
+advantage of transformer over rnn
+what is k,q,v and why did we multiply 1/sqrt(dk)
+whats the dimension of k,q,v, kqT, softmax output
+how the dimension boundary will look like in decision tree
+why regularization penalize the weight
+
+if you have temp forecasting for 500 cities with 5 extra variable(humidity,press..) for each cities what model will apply and how you will do ?? what about high dimension? how many columns you will have in model ?
+which evaluation metrics will be applicable for multi-linear regression
+multivariate time series models - varma,
+what if r2 is high and p value is low
+evaluation metrics for model failure analysis with/without imbalanced datasets
+svm decision boundary for different kernels
+list differences
+imputation method
+how to impute if null % > 30% but can't drop
+
+sagemaker lifecycle config 
+underfitting & overfitting avoid in ml and nn
+
+how do we deploy models in prodn , where do you deploy and how load the model
+does pca work on categorical variables
+how to measure co-relation between categorical o/p and target o/p ->
+different method of one-hot encoding, disadv of dummy encoding
+what will you do if you have f_A,f_b and then f_c came in inferencing
+in ECS => cluster vs task vs service
+
+in prompt need to fill certain field , it will not go ahead until its filled those field
+keeping table, column description to use smaller size of table and column with proper query formation
+
+tokenizer methods
+training of tokenizer in LM - word embedding
+embedding model size
+text embedding vs token embedding
+
+difference between class method with/without _
+difference between __init__ vs __call__
+return in function 
+decorator example
+@flask
+@dataclass
+@metaclass
+
+openai assistant
+how llm do function call - function calling 
+how llm connect with external tool
+Structured Outputs - json output parsing(pydantic/json scema) - via function calling vs response format(json_schema)
+gpt4o vs gpt3.5
+
+adf server = integration runtime
+	auto resolved run time
+	azure 
+	linked host (SISS)
+	linked host self hosted run time
+	
+pickle file
+requirements.txt
+app.py = server.py
+client.py with endpoint
+preprocessing.py
+docker file
+validation result
+
+	model registry
+	feature store
+	model artifacts
+	model endpoint
+	data storage
+	model monitoring + updating
+	code hub
+	docker + kubernetes
+	data + model + concept drift
+	tracking versioning + pipeline orchastreation + model deployment
+
+FROM public.ecr.aws/lambda/python:3.8
+RUN mkdir -p /app
+COPY . main.py /app/
+WORKDIR /app
+RUN pip install -r requirements.txt
+EXPOSE 8080
+CMD [ "main.py" ]
+ENTRYPOINT [ "python" ]
+=================================================================================================================================
+RLHF										- 	Reinforcement Learning from Human Feedback
+
+Finetuning									-	Federated Learning
+												Pretraining LLMs
+												Quantization Fundamentals with Hugging Face
+												Quantization in Depth
+												Finetuning Large Language Models
+
+Vcetor DBs/multimodal vectordb				-	Building Applications with Vector Databases
+												Vector Databases: from Embeddings to Applications
+									
+Prompt Engg / Prompt hub					-	Prompt Engineering for Vision Models
+												Large Multimodal Model Prompting with Gemini
+												Prompt Engineering with Llama 2 & 3
+												Pair Programming with a Large Language Model
+												ChatGPT Prompt Engineering for Developers
+									
+LLM/Multimodal/MoE/Diffusion/open source	-	How Diffusion Models Work
+												Open Source Models with Hugging Face
+												Introducing Llama 3.2
+
+Text Embedding/multimodal embedding			-	Embedding Models: From Architecture to Implementation
+												Understanding and Applying Text Embeddings
+
+Advanced RAG								-	Preprocessing Unstructured Data for LLM Applications
+												Retrieval Optimization: From Tokenization to Vector Quantization
+												Prompt Compression and Query Optimization
+												Advanced Retrieval for AI with Chroma
+												Large Language Models with Semantic Search
+												Function-Calling and Data Extraction with LLMs
+												Building Multimodal Search and RAG
+												Multimodal RAG: Chat with Videos
+												LangChain: Chat with Your Data
+												LangChain for LLM Application Development
+
+Knowledge Graph/Graph RAG					-	Knowledge Graphs for RAG
+
+Agents 										-	Functions, Tools and Agents with LangChain (All courses done)
+												Multi AI Agent Systems with crewAI
+												AI Agentic Design Patterns with AutoGen
+												AI Agents in LangGraph
+												Building Your Own Database Agent
+												Function calling and data extraction using LLMs
+												How Business Thinkers Can Start Building AI Plugins With Semantic Kernel
+
+			
+Agentic RAG									-	Building Agentic RAG with LlamaIndex
+												Langraph
+				
+MLOps/MLOps									-	Evaluating and Debugging Generative AI Models Using Weights and Biases
+												Automated Testing for LLMOps
+												LLMOps
+												Serverless LLM apps with Amazon Bedrock
+												Efficiently Serving LLMs
+												Building AI Applications with Haystack
+			
+Guardrails									-	Red Teaming LLM Application
+												Quality and Safety for LLM Applications
+												Building Systems with the ChatGPT API - moderation api
+
+				
+LLM Evaluation 								-	Building and Evaluating Advanced RAG
+												Improving Accuracy of LLM Applications
+												Evaluating and Debugging Generative AI Models Using Weights and Biases
+
+Speech-to-text
+Text-to-speech
+GAN/Diffusion
+
+Introduction to On-Device AI
+Carbon Aware Computing for GenAI Developers
+Building Generative AI Applications with Gradio
+
+Data Engineering
+Machine Learning in Production
+Generative AI with LLMs
+Mathematics for Machine Learning and Data Science
+Generative Adversarial Networks (GANs)
+TensorFlow: Data and Deployment
+TensorFlow: Advanced Techniques
+TensorFlow Developer Professional Certificate
+
+Machine Learning in Production
+Machine Learning Data Lifecycle in Production
+Analyze Datasets and Train ML Models using AutoML
+
+================================================================================================================================
+citiustech- round 1 - reject
+tredence - 	round 3 - reject
+splunk  -  	round 3 - reject
+verizon - 	round 1 - reject
+hca - 		round 2 - reject
+gitaa - 	round 1 - reject
+brainlabs - round 2 - reject
+mroads - 	round 3 - reject
+cleanhabors-round 2 - hr - offer accept
+ryan - 		round 2 - hr - offer accept
+infosys - 	round 1 - hr - offer reject
+accenture-  round 2 - hr - offer reject
+s&pglobal-  round 1 - reject
+milestone-  round 3 - reject
+cognizant-  round 1 - hr - offer reject
+niruthi  - 	round 1 - hr - offer reject
+8bit - 		round 1 - reject 
+deloitte -  round 1 - reject
+gravityer-  round 2 - reject
+tiger 	 -	round 2 - reject
+genpact  -  round 2 - reject
+evernoth -  round 2 - reject
+virtusa  -	round 2 - hr - offer reject
+ey 		 -	round 2 - hr - offer accept
+exl		 -	round 2 - reject
+epam	 - 	round 3 - reject
+maantic  -  round 3 - reject
+jobiak 	 -  round 3 - hr - offer reject
+snp tech -  round 3 - 
+pharmascroll- round 1 - reject
+everestdx- round 1 -  reject
+primera  -	round 2 - hr
+chubb - 	round 2 - hr
+=================================================================================================================================
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+class WicketOutException(Exception):
+  # write your code here
+  def __init__(self,message):
+    self.message = message
+    super().__init__(message)
+
+class OutException(Exception):
+  # write your code here
+  def __init__(self,message):
+    self.message = message
+    super().__init__(message)
+
+class Match:
+  # write your code here
+  def __init__(self,p1,p2):
+    self.player1 = p1
+    self.player2 = p2
+
+  def findWinner(self):
+    def count_special_triples(player):
+      count=0
+      for i in range(len(player)-2):
+        if player[i]%2==0 and player[i+1]%2==0 and player[i+2]%2==0:
+          count+=1
+      return count
+    player1_special = count_special_triples(self.player1)
+    player2_special = count_special_triples(self.player2)
+    if player1_special > player2_special:
+      return "Player1"
+    elif player1_special<player2_special:
+      raise OutException("Player 1 out")
+    else:
+      raise WicketOutException("ALL OUT")
+  
+  
+# Write the Sample Input here
+p1 = [2,2,4,6]
+p2 = [2,2,6,8]
+d = Match(p1,p2)
+
+try:
+  d.findWinner()
+except Exception as e:
+  assert e.message == "ALL OUT"
+  print(e.message)
+  
+  
+  
+  cto team
+  unstructured to str data
+  excel/pdf
+  data scientist
+  recommedation model
+  ner
+  semi structured table
+  
+  mlops
+  databricks
+  auto-ml in azure databricks
+  
+  glena - prompt engg
+  
+  staff level data scientist
+  
+  
+  
+  coding 
+  ds
+  algo
+  
+  Primera
+  digital transofrmation - gen ai - 25  ds nlp ml (growth teams ic 4) - ic end to end - agile azure - opensource finetuned llama3.3 own_gpus cloudera - data platforms rag deployed on it
