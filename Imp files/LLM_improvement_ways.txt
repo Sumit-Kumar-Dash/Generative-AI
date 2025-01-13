@@ -1,0 +1,72 @@
+LLMs Improvement Way:
+
+1.I/P Data format
+2.Loading I/P data(Document Loaders)
+3.Splitting the documentsr(Text Splitters) => Context-aware splitters
+4.Chunk Size with chunk overlapping ratio
+5.Embeddings model
+6.Vector Store/Index -> Different vector store(faiss,cognitive,weviate,chroma,vertex ai,deeplake etc)
+7.Type of index(List,Tree,Graph,Vector,key-value)
+Types of Chain => LLM, Sequential, TransformChain, LLMRouterChain
+8.Retreiver
+	8.1.Type of retreiver
+			Vector stored retriever(db.as_retriever()), MultiQueryRetriever, Contextual compression, EnsembleRetriever, MultiVector Retriever, ParentDocumentRetriever, Self-querying, Time-weighted vector store retriever, WebResearchRetriever
+	
+			cohere reranker,cognitive,pinecone,TF-IDF,weviate hybrid,ChatGPTPluginRetriever
+					
+			create_retriever_tool,create_conversational_retrieval_agent
+	8.2.Type of search in retriever => db.as_retriever()
+	8.3.Document Chain type => stuff,map_reduce,refine,map-reranker
+	8.4.Search type => similarity,mmr
+	8.5.Similarity score threshold retrieval
+		Specifying top k
+	8.6 Prompt Engineering	
+		8.6.1 Prompt Template(only for stuff) // FewShotPromptTemplate etc
+		8.6.3 example_selector  // base prompt // chat etc
+		8.6.3 Prompt pipelining
+	8.7 Output Parser
+	8.8.Chains => 	Foundational -> from langchain.chains.llm import LLMChain
+									from langchain.chains.router
+
+					RetrievalQA,ConversationalRetrievalChain, ConversationChain, MultiRetrievalQAChain,RetrievalQAWithSourcesChain,
+					LLMChain , MultiPromptChain, LLMRouterChain, EmbeddingRouterChain , 
+					SimpleSequentialChain, SequentialChain, TransformChain
+		
+					ConversationChain, LLMChain
+9. LLMs 
+
+
+10. Memory - 
+	ConversationBufferMemory	
+
+### 0. Graph RAG with Knowledge Graph
+
+### 1. Sentence Window retrieval -> Instead of embedding and retrieving entire text chunks, this method focuses on individual sentences or smaller units of text. By embedding these smaller units and storing them in a vector database, we can perform more precise similarity searches to find the most relevant sentences for a given query. In addition to retrieving the relevant sentences, Sentence Window Retrieval also includes the surrounding context – the sentences that come before and after the target sentence. This expanded context window
+
+### 2. Auto-merging retrieval -> Define a hierarchy of smaller chunks linked to parent chunks. If the set of smaller chunks linking to a parent chunk exceeds some threshold, then "merge" smaller chunks into the bigger parent chunk.
+
+### 3. Reliable RAG => Context & Answer Relevance & Groundedness => binary relevancy score & generated answer is fully grounded in the retrieved document
+
+### 4. Rerank - Rerank models sort text inputs by semantic relevance to a specified query. They are often used to sort search results returned from an existing search solution
+
+### 5. Query Expansion (with generated answer / multiple queries) - which adds additional terms to the search query, recovering relevant documents that might not have lexical overlap with the initial query. For a given query the prompt asks the LLM to generate a hypothetical answer. We can combine the generated answer to our original query and then pass it back to our LLM as a joint query. This provides more context to the LLM prompt prior to it retrieving the result.
+
+Hypothetical Document Embedding (HyDE) system for document retrieval. HyDE is an innovative approach that transforms query questions into hypothetical documents containing the answer, aiming to bridge the gap between query and document distributions in vector space.
+
+### 6. Prompt Compression & Query optimization & Context Compression - Context Compression aims to improve the relevance and conciseness of retrieved information by compressing and extracting the most pertinent parts of documents in the context of a given query. Traditional document retrieval systems often return entire chunks or documents, which may contain irrelevant information. Contextual compression addresses this by intelligently extracting and compressing only the most relevant parts of retrieved documents, leading to more focused and efficient information retrieval.
+
+### 7. Self RAG - Self-RAG is an advanced algorithm that combines the power of retrieval-based and generation-based approaches in natural language processing. It dynamically decides whether to use retrieved information and how to best utilize it in generating responses, aiming to produce more accurate, relevant, and useful outputs. ## audi/market intelligence
+
+### 8. Fine tuning (Instruction Fine Tuning // RLHF)
+
+### 9. Document Augmentation through Question Generation for Enhanced Retrieval
+### 10. Corrective RAG Process: Retrieval-Augmented Generation with Dynamic Correction
+
+https://python.langchain.com/docs/modules/data_connection/retrievers/
+https://python.langchain.com/docs/use_cases/question_answering/
+https://python.langchain.com/docs/use_cases/question_answering/how_to/conversational_retrieval_agents
+https://python.langchain.com/docs/use_cases/question_answering/how_to/multi_retrieval_qa_router
+https://python.langchain.com/docs/use_cases/question_answering/how_to/question_answering
+https://python.langchain.com/docs/use_cases/question_answering/integrations/openai_functions_retrieval_qa
+https://python.langchain.com/docs/integrations/platforms/microsoft
+https://api.python.langchain.com/en/latest/vectorstores/langchain.vectorstores.azuresearch.AzureSearch.html

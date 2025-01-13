@@ -1,0 +1,26 @@
+created saas based application with api tracker , payment , devops , backend , frontend , login 
+indian language based - upload any documentr(pdf/images/scanned)(of any pages of English language) ask any question in any language 
+
+
+AWS MLOPS - github ,  own models , ECR with github and independent , retraining , testing , monitoring  , cloudwatch,html + containeraization
+
+ECS-API
+Dataset source - AWS open data , Microsoft open data , Google open data , US gov data , Kaggle datasets(mnist , cifar-10) , Imagenet
+
+
+CV/NLP
+AWS documentation
+Docker/Kubernets of AWS architecture
+azure to aws
+Kubeflow
+Monte carlo
+Recommendation + Market basket analysis
+Fiware
+
+Coursera - MLOps, AWS for ML
+A Cloud Guru 
+Databricks
+
+Youtube
+Towardsdatascience
+aws document
