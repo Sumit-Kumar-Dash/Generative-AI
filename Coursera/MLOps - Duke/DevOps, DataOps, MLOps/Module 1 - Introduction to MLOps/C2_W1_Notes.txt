@@ -1,0 +1,59 @@
+Github code spaces / Azure Cloud Shell / GCP Cloud Shell
+
+create virtual env - 
+virtualenv ~/.venv
+source ~/.venv/bin/activate
+which python
+
+# making this venv as default
+
+
+
+touch requirements.txt
+touch hello.py
+touch test_hello.py
+touch main.yml -> check which folder to write
+which make
+touch Makefile
+
+add code in Makefile,hello,py,test_hello.py -> check video
+
+make install
+make test
+make lint
+make format
+make all
+
+push code into github
+
+write main.yml file and connect to github actions # yml file will run all those instructions wrote in Makefile
+
+change in little bit make file
+
+
+
+ci
+cd
+model registry
+feature store
+data versioning
+data/model drift
+
+
+noahgift/fastapi
+gunicorn/uvicorn/nginx
+
+
+Make file example :
+	hello:
+		echo "This is make file"
+		
+Three important files in python :
+	Makefile
+	Dockerfile
+	requirements.txt
+
+
+=======================================================================================
+week 2
+nogibjj/heuristics => Greedy Algo
